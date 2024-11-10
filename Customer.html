@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Info</title>
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+  
+    <header class="titles">
+        <h1>Whisker Restaurant</h1>
+        <p>You can now order online</p>
+    </header>
+    
+                                                              <!--start of  navigation buttons -->
+        <div class="nav-buttons">
+            <a href="main.html" class="navs">Home</a>
+            <a href="menu.html" class="navs">Menu</a>    
+        </div>
+
+
+                                                                <!-- end of navigation buttons -->
+
+
+
+
+                                                                     <!-- personal info -->
+        
+<div class="container">
+    <div class="personal-info">
+      <h2>Personal Info</h2>
+      <form id="personal-info-form">
+        <div class="input-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="input-group">
+          <label for="order-history">Order History (e.g., Pizza, Wings, etc.):</label>
+          <textarea id="order-history" name="order-history" placeholder="List your past orders here..." rows="4" readonly></textarea>
+        </div>
+        <div class="rewards">
+          <h3>Rewards Program</h3>
+          <p>Purchase 3 meals and get the next one free!</p>
+          <p><strong>Purchases so far: <span id="purchase-count">0</span></strong></p>
+          <button type="button" id="submit-order">Place Order</button>
+        </div>
+        <button type="submit">Save Information</button>
+      </form>
+    </div>
+  </div>
+
+                                                              <!-- end of personal info -->
+
+        
+     
+        <footer>
+            <p>© 2024 Whisker Restaurant. All rights reserved.</p>
+        </footer>
+        
+</body>
+</html>

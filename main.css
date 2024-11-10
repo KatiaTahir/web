@@ -9,17 +9,17 @@
 
 
 body{
-    background-color: #e3e3e3d3;
+    background-color:#302e31;
   
 }
 
-
+                                                     /* titles */
 .titles{
     text-align: center;
-    color: rgb(0, 0, 0);
-    background: linear-gradient(to right, #d9d9d9, #bdbdbd);
+    color: rgb(246, 246, 246);
+    background-color: #716f71;
     padding: 22px;
-    box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.1);
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
 }
 
 
@@ -37,18 +37,27 @@ body{
  
     }
 
+                                                                 /* end of titles */
 
+
+
+
+
+
+
+                                                            /* navigation buttons */
     .nav-buttons {
         display: flex;
         justify-content: center;
-        background-color: #e0e0e0;
+        background-color:#212121;
         padding: 15px 0;
+        box-shadow: 0px 4px 10px rgb(0, 0, 0);
     }
     
 
     .nav-buttons a {
         font-size: 24px;
-        color: #5e2a20;
+        color: #faefef;
         padding: 0 20px;
         text-decoration: none;
         font-weight: bold;
@@ -58,10 +67,21 @@ body{
 
     .nav-buttons a:hover {
         color: white;
-        background-color: #5e2a20;
+        background-color: #505050;
         border-radius: 5px;
     }    
  
+
+
+                                                       /* end of navigation buttons */
+
+
+
+
+
+
+
+                                                        /* containers */
     .content {
         display: flex;
         justify-content: space-between;
@@ -93,26 +113,32 @@ body{
     margin-left: 20px;
     margin-top: 30px;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #464646;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     font-size: 18px;
     line-height: 1.6;
-    color: #2b2a2a;
+    color: #ddd3d3;
     max-width: 600px;
     height: 600px;
     
     
 }
 
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #d9d9d9;
-    color: #5e2a20;
-    font-size: 16px;
+.contact-info {
+    text-align: left;
+    background-color: #6c6768;
+    padding: 20px;
+  margin-top: -20px;
+    border-radius: 8px;
 }
+#email{
+
+text-decoration: none;
+color: #e4e3e3;
+
+} 
+
 
 .row{
 
@@ -122,3 +148,15 @@ footer {
     gap: 20px;
 
 }
+
+
+
+                                                                  /* end of containers */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #c7c0bf;
+    font-size: 16px;
+    background-color:  #716f71;
+}
+
