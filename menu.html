@@ -6,8 +6,25 @@
     <link rel="stylesheet" href="menu.css">
     <title>Menu</title>
 </head>
-<body>
-  
+<body> 
+    <!-- order screen pop up -->
+    <div id="orderScreen">
+        <div>
+            <h1>please fill the information below</h1>
+            <form id="orderForm" name="myForm">
+                <input name="firstName" type="text" placeholder="First name"> 
+                <input name="lastName" type="text" placeholder="Last name">
+                <input name="phoneNumber" type="number" placeholder="Phone Number">
+                <input name="adress1" type="text" placeholder="Number of Street">
+                <input name="adress1" type="text" placeholder="Number of House">
+                <input name="food" id="nameOfFood" type="text" placeholder="order" readonly>
+                <input type="number" placeholder="quanitity">
+                <p>Price: 20$</p>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+  <!-- end of orderscreen -->
     <header class="titles">
         <h1>Whisker Restaurant</h1>
         <p>ORDER NOW</p>
@@ -54,7 +71,7 @@
                     <option value="large">Large:$6.99</option>
                 </select>
             </div>
-            <button class="order-btn" type="submit" >Order Now</button>
+            <button class="order-btn" type="submit" onclick="order('frenchFries')">Order Now</button>
         </div>
     </div>
     
@@ -75,7 +92,7 @@
                     <option value="large">Large :$6.99</option>
                 </select>
             </div>
-            <button class="order-btn" type="submit" >Order Now</button>
+            <button class="order-btn" type="submit"  onclick="order('onionRing')">Order Now</button>
         </div>
     </div>
     
@@ -95,7 +112,7 @@
                     <option value="large">Large: $9.99</option>
                 </select>
             </div>
-            <button class="order-btn" type="submit" >Order Now</button>
+            <button class="order-btn" type="submit" onclick="order('chickenNugget')" >Order Now</button>
         </div>
     </div>
 </div>
@@ -121,7 +138,7 @@
                 <option value="large">15 pieces - $16.99</option>
             </select>
         </div>
-        <button class="order-btn" type="submit" >Order Now</button>
+        <button class="order-btn" type="submit" onclick="order('buffaloWings')">Order Now</button>
     </div>
 </div>
 <div class="menu-item">
@@ -139,7 +156,7 @@
                 <option value="large">15 pieces - $16.99</option>
             </select>
         </div>
-        <button class="order-btn" type="submit" >Order Now</button>
+        <button class="order-btn" type="submit" onclick="order('barbecueWings')">Order Now</button>
     </div>
 </div>
 
@@ -162,7 +179,7 @@
                     <option value="large">Large: $9.99</option>
                 </select>
             </div>
-            <button class="order-btn" type="submit" >Order Now</button>
+            <button class="order-btn" type="submit" onclick="order('cheeseBurger')">Order Now</button>
         </div>
     </div>
 
@@ -183,7 +200,7 @@
                     <option value="large">Large: $11.99</option>
                 </select>
             </div>
-            <button class="order-btn" type="submit" >Order Now</button>
+            <button class="order-btn" type="submit" onclick="order('mushroomBurger')">Order Now</button>
         </div>
     </div>
 
@@ -204,7 +221,7 @@
                     <option value="large">Large - $15.99</option>
                 </select>
             </div>
-            <button class="order-btn" type="submit" >Order Now</button>
+            <button class="order-btn" type="submit" onclick="order('pepperoniPizza')">Order Now</button>
         </div>
     </div>
 
@@ -224,7 +241,7 @@
                     <option value="large">Large - $13.99</option>
                 </select>
             </div>
-            <button class="order-btn" type="submit" >Order Now</button>
+            <button class="order-btn" type="submit" onclick="order('vegeterianPizza')">Order Now</button>
         </div>
     </div>
     </div><div>
@@ -252,7 +269,7 @@
                 <option value="medium" selected>can:$1.99</option>
             </select>
         </div>
-        <button class="order-btn" type="submit" >Order Now</button>
+        <button class="order-btn" type="submit" onclick="order('pepsi')">Order Now</button>
     </div>
 </div>
 
@@ -275,7 +292,7 @@
                 <option value="medium" selected>can:$1.99</option>
             </select>
         </div>
-        <button class="order-btn" type="submit" >Order Now</button>
+        <button class="order-btn" type="submit" onclick="order('sprite')">Order Now</button>
     </div>
 </div>
 
@@ -300,7 +317,7 @@
                 <option value="medium" selected>can:$1.99</option>
             </select>
         </div>
-        <button class="order-btn" type="submit" >Order Now</button>
+        <button class="order-btn" type="submit" onclick="order('cocaCola')">Order Now</button>
     </div>
 </div>
    </div>
