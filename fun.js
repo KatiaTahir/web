@@ -1,0 +1,1 @@
+console.log('Server run'); // test if the js run along the html
