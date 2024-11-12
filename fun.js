@@ -56,17 +56,18 @@ function submit(){
 }
 let OK = document.getElementById('OK');
 OK.addEventListener('click', closeUp);
+let firstH3 = menuHolder.querySelector('h1'); 
+let notify = document.createElement('h1');
+menuHolder.insertBefore(notify, firstH3.nextSibling);
 function closeUp (){
     successOrder.style.display="none"
     orderCounter++
     console.log(orderCounter)
     if (orderCounter >= 3){
-        let notify = document.createElement('h1');
     notify.innerHTML="Your Next order will be 50% off"
     notify.className='header1'
     notify.style.color='red'
-    let firstH3 = menuHolder.querySelector('h1'); 
-    menuHolder.insertBefore(notify, firstH3.nextSibling);
+
     
        
     }
