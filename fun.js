@@ -10,7 +10,8 @@ let finalPriceTextForm = document.getElementById('finalPriceTextForm')
 
 function order(name, price){
  let item = name;
- let pricey = price;
+ let pricey = price
+ if(orderCounter >= 3){pricey = price/2;}
  let foodName = document.createElement('h1');
  let foodPrice = document.createElement('h1');
  let divy = document.createElement('div');
@@ -24,16 +25,16 @@ function order(name, price){
  jsFinalPrice = jsFinalPrice + pricey; // update he final price by adding the new item price upon the other
  let roundedPrice = jsFinalPrice.toFixed(2); //to avoid really big ingter floating point like 0.000000000000000000001
  finalPriceText.innerHTML=(roundedPrice + '$');
- finalPriceTextForm.innerHTML=(roundedPrice + '$');
+ finalPriceTextForm.innerHTML=(roundedPrice + '$')
  divy.addEventListener('click', function() {
     divy.remove(); 
+    
     jsFinalPrice = jsFinalPrice - pricey;
     
     // Update the displayed final price
     let roundedPrice = jsFinalPrice.toFixed(2);
     finalPriceText.innerHTML = (roundedPrice + '$');
-    finalPriceTextForm.innerHTML = (roundedPrice + '$');
-  });
+    finalPriceTextForm.innerHTML = (roundedPrice + '$');});
 }
  ////////////////////////////////////
  let orderScreen = document.getElementById('orderScreen');
@@ -66,7 +67,7 @@ function closeUp (){
     notify.style.color='red'
     let firstH3 = menuHolder.querySelector('h1'); 
     menuHolder.insertBefore(notify, firstH3.nextSibling);
-    jsFinalPrice = jsFinalPrice/2
+    
        
     }
     
