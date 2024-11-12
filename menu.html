@@ -8,8 +8,28 @@
 </head>
 <body> 
     <!-- order screen pop up -->
+    <div id="orderScreen">
+        <div>
+            <h1>please fill the information below</h1>
+            <form id="orderForm" name="myForm">
+                <input name="firstName" type="text" placeholder="First name" required>  
+                <input name="lastName" type="text" placeholder="Last name" required>
+                <input name="phoneNumber" type="number" placeholder="Phone Number" required>
+                <input name="adress1" type="text" placeholder="Number of Street" required>
+                <input name="adress1" type="text" placeholder="Number of House" required>
+                <label for="">Total:</label><p id="finalPriceTextForm"></p>
+                <input id="submitButton" type="submit">
+            </form>
+        </div>
+    </div>
 
   <!-- end of orderscreen -->
+   <!-- success pop up -->
+    <div id="successOrder">
+        <img style="height: 7vh;margin-bottom: 2vh; margin-top: 0px;" src="success-svgrepo-com.svg" alt="">
+        <h1>sucessfully submited,<br> the order will arive as soon as possible</h1>
+        <button id="OK">Ok</button>
+    </div>
     <header class="titles">
         <h1>Whisker Restaurant</h1>
         <p>ORDER NOW</p>
@@ -34,10 +54,10 @@
 
 <br>
 <br>
-<div class="menuHolder">
+<div  id="menuHolder" class="menuHolder">
             <div id="sides"></div>
-            <h1 class="header1">Sides <br>
-        </h1>
+            <h1 class="header1">Sides <br></h1>
+    
         <br>
                                                         <!-- menu items -->
                                                             <!-- side items -->
@@ -314,7 +334,7 @@
 </div>
 <div id="Cart"><h1>Your Orders:</h1>
 
-<div id="finalPrice"> <h1 >Final Price: </h1> <h1 id="finalPriceText">0$</h1><button>Order</button></div>
+<div id="finalPrice"> <h1 >Final Price: </h1> <h1 id="finalPriceText">0$</h1><button id="FinalOrderButton">Order</button></div>
 </div>
 </div>
 
