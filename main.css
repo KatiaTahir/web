@@ -53,16 +53,16 @@ body{
         padding: 15px 0;
         box-shadow: 0px 4px 10px rgb(0, 0, 0);
     }
-    
-
-    .nav-buttons a {
-        font-size: 24px;
+  
+   .nav-buttons a {
+        font-size: 44px;
         color: #faefef;
         padding: 0 20px;
         text-decoration: none;
         font-weight: bold;
         transition: color 0.3s, background-color 0.3s;
     }
+
 
 
     .nav-buttons a:hover {

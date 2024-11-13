@@ -40,7 +40,7 @@
 
         <a href="index.html" class="navs">Home</a>
 
-       
+        <a href="Customer.html" class="navs">Customer info</a>    
     </div>
 <br>
 
